@@ -1,0 +1,12 @@
+<h2 mat-dialog-title class="teste">Order Summary</h2>
+<mat-dialog-content class="text">
+  <div class="box3_text">“I drink my coffee using <strong>{{ getGroup() }}</strong>, with a <strong>{{ getGroup1() }}</strong> type of bean. <strong>{{ getGroup2() }}</strong> , sent to me <strong>{{ getGroup4() }}</strong>.”
+  </div>
+  <div class="box3_subtext">
+    <p class="subtext">Is this correct? You can proceed to checkout or go back to plan selection if something is off. Subscription discount codes can also be redeemed at the checkout. </p>
+  </div>
+</mat-dialog-content>
+<mat-dialog-actions align="end" class="actions">
+  <h2 class="subtotal">{{ getValor() }}</h2>
+  <button class="but" mat-flat-button aria-label="Checkout" [mat-dialog-close]="true" cdkFocusInitial>Checkout</button>
+</mat-dialog-actions>
